@@ -1,0 +1,11 @@
+@Ledger.Web_HostAddress = http://localhost:5277
+
+GET {{Ledger.Web_HostAddress}}/health/db
+Accept: application/json
+
+###
+
+GET {{Ledger.Web_HostAddress}}/ping
+Accept: application/json
+
+###
