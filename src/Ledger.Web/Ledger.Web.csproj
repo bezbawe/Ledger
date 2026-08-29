@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Ledger.Application\Ledger.Application.csproj" />
     <ProjectReference Include="..\Ledger.EventStore\Ledger.EventStore.csproj" />
+    <ProjectReference Include="..\Ledger.Domain\Ledger.Domain.csproj" />
   </ItemGroup>
 
 </Project>

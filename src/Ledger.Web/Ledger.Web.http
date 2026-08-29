@@ -5,7 +5,37 @@ Accept: application/json
 
 ###
 
-GET {{Ledger.Web_HostAddress}}/ping
+POST {{Ledger.Web_HostAddress}}/accounts
+Accept: application/json
+
+###
+
+@accountId = 00000000-0000-0000-0000-000000000000
+
+POST {{Ledger.Web_HostAddress}}/accounts/{{accountId}}/deposits
+Content-Type: application/json
+
+{
+  "amount": 100
+}
+
+###
+
+POST {{Ledger.Web_HostAddress}}/accounts/{{accountId}}/withdrawals
+Content-Type: application/json
+
+{
+  "amount": 40
+}
+
+###
+
+GET {{Ledger.Web_HostAddress}}/accounts/{{accountId}}/balance
+Accept: application/json
+
+###
+
+GET {{Ledger.Web_HostAddress}}/accounts/{{accountId}}/history
 Accept: application/json
 
 ###
